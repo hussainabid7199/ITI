@@ -1,3 +1,8 @@
+/* Note :- Navigation and footer and breadcrumb css is same for all the page (Home page dont have breadcrumb)
+        :- CSS of all the page is in style.css only. */
+
+
+
 *{
     margin: 0;
     padding: 0;
@@ -34,6 +39,35 @@
 
 .navbar-nav li{
     margin-right: 2rem;
+}
+
+@media(max-width:780px){
+    .navbar{
+        padding: 0px;
+    }
+    .navbar-light .navbar-brand{
+        margin-top: 5px;
+        margin-bottom: 5px;
+        padding: 0px;
+    }
+    .navbar-nav{
+        width: 100%;
+        justify-content: center;
+        background-color: #190050;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+    .navbar-nav li {
+        margin-right: 0rem;
+    }
+    .nav-item a{
+        color: #FEFCFF !important;
+        font-weight: 500 !important;
+    }
+    .nav-item .nav-link{
+        padding: 0px;
+        margin: 5px;
+    }
 }
 
 /* .sign-in{
@@ -142,6 +176,9 @@
 .red-col{
     color: red;
 }
+.ylo-col{
+    color: #fffc39;
+}
 /* span red-col *//* our institute *//* mission-vission  */
 
 
@@ -212,13 +249,8 @@
 
 /* mini-bar */
 
-    .back-img{
-          background-color: rgba(255, 238, 0, 0.5);  
-          height: 200px;
-        }
-    
 
-    .content-single{
+        .content-single{
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -229,6 +261,7 @@
     .main-con{
         padding-right: 4%;
         margin: 4.5%;
+        color: #FEFCFF;
     }
     
     @media (max-width:780px){
@@ -395,22 +428,222 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Home Page */
+
+
+/* ******************************************-End of Home Page Css-*********************************************** */
+
+
+/* Course Page */
+
+/* Breadcrumb section  */
+
+.breadcrumb{
+    background-size: cover;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    height: 200px;
+}
+@media(max-width:780px){
+    .breadcrumb{
+        height: 150px;
+    }
+}
+
+.crumb-sec{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 10%;
+    top: 30%;
+}
+
+.breadcrumb-title h2{
+        color: #FEFCFF;
+}
+
+.nav-bread a{
+    color: #FEFCFF;
+    font-weight: 500;
+    text-decoration: none;
+}
+    
+
+
+/* Breadcrumb section  */
+
+/* course detail section  */
+
+.course{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.fluid-con{
+    margin-bottom: 5%;
+}
+
+.course-detail{
+    width: 60%;
+    height: auto;
+    margin-right: 5%;
+    background-color: #FFFAFA;
+    box-shadow: 0 0 5px rgb(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+}
+@media(max-width:780px){
+    .course-detail{
+        width:100%;
+        margin-right: 0px;
+    }
+}
+
+.course-head{
+    margin: 20px;
+    text-align: center;
+}
+.course-discrip{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.course-discrip p{
+    width: 80%;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.learn-tile{
+    margin: 15px;
+}
+
+.course-index ul li{
+    font-size: 14px;
+    list-style-type: none;
+}
+
+.index-overview p{
+    font-size: 14px;
+}
+
+.learn-tile .lt-course{
+    text-align: center;
+}
+
+.course-index, .index-overview{
+    width: 50%;
+}
+@media(max-width:780px){
+    .course-detail{
+        margin-top: 10%;
+        margin-bottom: 5%;
+    }
+    .course-index, .index-overview{
+        width: 100%;
+    }
+    .course-index h6, p, li{
+        text-align: center;
+        
+    }
+    .index-overview h6{
+        text-align: center;
+    }
+    .course-index ul{
+        padding: 0px;
+    }
+}
+
+.course-info-detail{
+    width: 35%;
+    height: auto;
+    background-color: #190050;
+    border: 1px #0f0045;
+    border-radius: 15px;
+    box-shadow: 0 0 5px rgb(0, 0, 0, 0.5);
+}
+@media(max-width:780px){
+    .course-info-detail{
+        width: 100%;
+    }
+    .title-sale h2{
+        text-align: center;
+    }
+}
+
+.title-sale h2{
+    margin: 20px;
+    color: #FEFCFF;
+}
+
+.things-you-get{
+    text-align: center;
+    font-weight: 500;
+    color: #FEFCFF;
+}
+.things-you-get ul{
+    padding: 0%;
+}
+.things-you-get ul li{
+    list-style-type: none;
+}
+.certificate{
+    width: 100%;
+    margin-left: 10%;
+}
+.certificate .cer-tag{
+    width: 80%;
+}
+.certificate .cer-tag h6{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+}
+.certificate img{
+    width: 80%;
+    height: 160px;
+}
+
+.btn-course{
+    justify-content: center;
+    width: 70%;
+    margin-left: 15%;
+    border: 1px solid yellow;
+    border-radius: 9px;
+}
+.btn-course a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 15px;
+    font-weight: 500;    
+}
+
+.button-buy{
+    width: 70%;
+    margin-top: 8.5%;
+    margin-left: 15%;
+}
+
+.button-buy a{
+    text-decoration: none;
+    color: #FEFCFF;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+/* course detail section  */
+
+
+
+
+
+
+
+
+
+/* Course Page */
+
+
+
