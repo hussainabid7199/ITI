@@ -767,8 +767,8 @@
     .heading-course{
         margin-top: 10%;
     }
-    .course-tile-sec, .carousel{
-        min-height: 950px;
+    .course-tile-sec{
+        min-height: 980px;
     }
     .carousel-inner-height{
         height: max-content;
