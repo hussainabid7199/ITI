@@ -9,6 +9,9 @@
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+.body{
+    background-color: rgb(0, 0, 0) !important;
+}
 /* Home Page */
 
 
@@ -41,7 +44,7 @@
     margin-right: 2rem;
 }
 
-@media(max-width:780px){
+@media(max-width:991px){
     .navbar{
         padding: 0px;
     }
@@ -78,33 +81,51 @@
 /* Navigation Bar  */
 
 /* carousel-section */
-
-@media (max-width:900px){
-    .carousel, .carousel-inner, .carousel-item{
-        height: 230px;
-    }
-    .carousel-item img{
-        height: 100%;
-    }
-}
-
-.carousel-content{
-   position: absolute;
-   display: inline-block;
-   bottom: 270px;
-   width: 100%;
-   height: auto;
+.carousel-content {
+    position: absolute;
+    display: inline-block;
+    bottom: 40%;
+    width: 100%;
+    height: auto;
 }
 
 .carousel-content h1, h3{
     text-align: center;
    color: #ffffff;
    font-weight: bolder;
-   font-size: 50px;
+   font-size: 60px;
    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+@media (max-width:760px){
+    .carousel, .carousel-inner, .carousel-item{
+        height: 100%;
+    }
+    .carousel-item img{
+        height: 100%;
+    }
+    .carousel-content {
+        bottom: 30%;
+    }
+    .carousel-content h1, h3{
+       font-size: 20px;
+    }
+}
 
+@media (min-width:761px) and (max-width:900px){
+    .carousel, .carousel-inner, .carousel-item{
+        height: 100%;
+    }
+    .carousel-item img{
+        height: 100%;
+    }
+    .carousel-content {
+        bottom: 40%;
+    }
+    .carousel-content h1, h3{
+       font-size: 35px;
+    }
+}
 
 /* carousel-section */
 
@@ -142,7 +163,7 @@
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-@media(max-width:750px){
+@media(max-width:760px){
     .card-con{
         margin-top: 10%;
     }
@@ -169,6 +190,25 @@
         margin-top: 20px;
     }
 }
+
+@media(min-width:761px) and (max-width:1200px){
+    .media-761px{
+        width: 90% !important;
+    }
+    .card{
+        width: 30% !important;
+        height: auto;
+        margin: 10px;
+        display:inline-block;
+        position: relative;
+        bottom: 5rem;
+        background-color: rgb(9, 5, 87);
+        box-shadow: 0px 0px 15px rgb(255, 255, 255);
+    }
+    .card img{
+        width: 40px;
+    }
+}
 /* card */
 
 
@@ -190,7 +230,7 @@
 .content-box{
     margin-right: 5%;
 }
-@media (max-width: 780px){
+@media (max-width: 760px){
     .institute{
         margin-top: 10%;
         margin-bottom: 10%;
@@ -212,6 +252,20 @@
     }
 }
 
+@media(min-width:761px) and (max-width:1200px){
+    .media-con-761px{
+        flex-direction: column;
+    }
+    .video-img img{
+        width: 100%;
+        margin-top: 5%;
+    }
+    .video-img-mv img{
+        width: 100%;
+        margin-bottom: 5%;
+    }
+}
+
 /* our institute */
 
 /* mission-vission  */
@@ -222,7 +276,7 @@
 .content-box-mv{
     margin-left: 5%;
 }
-@media (max-width: 780px){
+@media (max-width: 991px){
     .mission-vision{
         margin-bottom: 10%;
     }
@@ -264,7 +318,7 @@
         color: #FEFCFF;
     }
     
-    @media (max-width:780px){
+    @media (max-width:991px){
         .content-single{
             text-align: center;
         }
@@ -327,7 +381,7 @@
         margin: 10px;
     }
 
-    @media (max-width:780px){
+    @media (max-width:991px){
         .query-details{
             text-align: center;
         }
@@ -338,12 +392,27 @@
         .gif-con{
             margin-bottom: 5%;
             margin-left: 20%;
+            width: 50%;
+            height: auto;
         }
         .query-form input, textarea, select{
             margin-left: 9%;
         }
     }
 
+
+    @media(min-width:761px) and (max-width:1200px){
+        .gif-con{
+            margin-bottom: 5%;
+            margin-left: 20%;
+            width: 50%;
+            height: auto;
+        }
+        .ani-img{
+            width: 100%;
+            height: 250px;
+        }
+    }
 
 
 
@@ -381,7 +450,7 @@
         height: 270px;
     }
 
-    @media(max-width:780px){
+    @media(max-width:991px){
         .address, .address a{
             text-align: center;
         }
@@ -438,6 +507,12 @@
 /* Home Page */
 
 
+/* Responsiveness for small to medium and large device 
+is done for the home page including navigation bar and 
+footer section, which is common for every page. 
+(Read the media query code carefull and the optimise.) */
+
+
 /* ******************************************-End of Home Page Css-*********************************************** */
 
 
@@ -452,7 +527,7 @@
     background-attachment: fixed;
     height: 200px;
 }
-@media(max-width:780px){
+@media(max-width:991px){
     .breadcrumb{
         height: 150px;
     }
@@ -491,6 +566,19 @@
     margin-bottom: 5%;
 }
 
+@media(min-width:761px) and (max-width:1200px){
+    .media-mid-device{
+        flex-direction: column !important;
+    }
+}
+
+@media(min-width:850px) and (max-width: 1200px){
+    .media-course-info-detail{
+        width: 100% !important;
+        margin-top: 5%;
+    }
+}
+
 .course-detail{
     width: 60%;
     height: auto;
@@ -500,10 +588,16 @@
     border: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: 10px;
 }
-@media(max-width:780px){
+@media(max-width:760px){
     .course-detail{
         width:100%;
         margin-right: 0px;
+    }
+}
+
+@media(min-width:761px) and (max-width:1200px){
+    .course-detail{
+        width: 100%;
     }
 }
 
@@ -543,7 +637,7 @@
 .course-index, .index-overview{
     width: 50%;
 }
-@media(max-width:780px){
+@media(max-width:991px){
     .course-detail{
         margin-top: 10%;
         margin-bottom: 5%;
@@ -571,7 +665,7 @@
     border-radius: 15px;
     box-shadow: 0 0 5px rgb(0, 0, 0, 0.5);
 }
-@media(max-width:780px){
+@media(max-width:991px){
     .course-info-detail{
         width: 100%;
     }
@@ -654,10 +748,29 @@
 
 
 /* our-instiute */
+@media(min-width:761px) and (max-width:1000px){
+    .media-about-mid-device{
+        width: 90% !important;
+    }
+    .instute-details p{
+        margin-right: 15px;
+    }
+    .contentDir{
+        width: 80%;
+        margin-left: 10%;
+    }
+    .faculty-tile{
+        min-height: 550px;
+    }
+    .instute-details p, .mission-details p, .vision-details p{
+        text-align: left;
+    }
+}
+
 .instute-details{
     margin-right: 10%;
 }
-@media(max-width:780px){
+@media(max-width:991px){
     .instute-details{
         margin-right: 0%;
     }
@@ -680,11 +793,13 @@
 .our-instiute, .mission-vision{
     margin-top: 5%;
 }
-@media(max-width:780px){
+@media(max-width:991px){
     .vision-details, .heading-vision{
         margin-left: 0%;
     }
 }
+
+
 
 /* <!-- Mission and Vision --> */
 
@@ -706,7 +821,7 @@
     margin-top: 20px;
 }
 
-@media(max-width:780px){
+@media(max-width:991px){
     .thoughts{
         position: relative;
         top: 13px;
@@ -730,77 +845,7 @@
     margin-left: 30%;
 }
 
-.image-dir{
-    width: 50%;
-    height: auto;
-    margin-left: 30%;
-}
-.image-dir img{
-    width: 80%;
-    height: 250px;
-    box-shadow: 0 0 15px black;
-    border: 1px solid black;
-    border-radius: 10px;
-}
 
-.name-position{
-    text-align: center;
-}
-.contentDir .titleMassage, .dirMassage{
-    text-align: center;
-}
-.dirMassage, .name-position{
-    margin-top: 3%;
-}
-
-@media(max-width:780px){
-    .dir-position{
-        width: 100%;
-        margin-left: 0%;
-    }
-    .img-dir{
-        width: 60%;
-        margin-left: 20%;
-    }
-}
-
-
-
-
-
-/* faculty section  */
-
-@media(max-width:780px){
-    .heading-course{
-        margin-top: 10%;
-    }
-    .course-tile-sec{
-        min-height: 980px;
-    }
-    .carousel-inner-height{
-        height: max-content;
-    }
-    .carousel-item-h {
-        height: max-content;
-    }
-}
-
-
-
-/* contact us  */
-.body{
-    background-color: rgb(0, 0, 0);
-}
-.contact{
-    width: 100%;
-    margin-top: 3%;
-}
-.contact-headline{
-    width: 30%;
-    position: absolute;
-    left: 24%;
-    bottom:44%;
-}
 .contact-headline p{
     font-size: 13px;
 }
@@ -927,6 +972,199 @@
     width: 25px !important;
     height: 25px !important;
     margin: 10px !important;
+}
+
+@media(min-width:1000px) and (max-width:1200px){
+    .dir-inner{
+        width: 70%;
+        margin-left: 15%;
+        }
+}
+
+.image-dir{
+    width: 50%;
+    height: auto;
+    margin-left: 30%;
+}
+@media(max-width:760px){
+    .image-dir {
+        width: 80%;
+        height: auto;
+        margin-left: 18%;
+    }
+}
+
+
+.image-dir img{
+    width: 80%;
+    height: 250px;
+    box-shadow: 0 0 15px black;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.name-position{
+    text-align: center;
+}
+.contentDir .titleMassage, .dirMassage{
+    text-align: center;
+}
+.dirMassage, .name-position{
+    margin-top: 3%;
+}
+
+@media(max-width:991px){
+    .dir-position{
+        width: 100%;
+        margin-left: 0%;
+    }
+    .img-dir{
+        width: 60%;
+        margin-left: 20%;
+    }
+}
+
+
+
+
+
+/* faculty section  */
+
+@media(max-width:991px){
+    .heading-course{
+        margin-top: 10%;
+    }
+    .carousel-inner-height{
+        height: max-content;
+    }
+    .carousel-item-h {
+        height: max-content;
+    }
+}
+
+
+
+/* contact us  */
+
+.contact{
+    width: 100%;
+    margin-top: 3%;
+}
+.contact-headline{
+    width: 30%;
+    position: absolute;
+    left: 24%;
+    bottom:44%;
+}
+
+@media(max-width:760px){
+    .contact-headline{
+        visibility: collapse;
+    }
+    .contactInfo{
+        margin-left: 5%;
+        margin-bottom: 5%;
+        width: 90%;
+    }
+    .contactInfoTitle{
+        position: static;
+        bottom: 0rem;
+        height: 90%;
+        width: 100%;
+        margin-top: 8%;
+    }
+    .icon-in-s {
+        height: 100%;
+        width: 100%;
+        margin-left: 0%;
+        margin-top: 3%;
+    }
+    .query-form-w {
+        width: 100%;
+        margin-left: 0px;
+    }
+    .icon-in{
+        justify-content: left;
+        margin-left: 5%;
+    }
+    .icon-in-s {
+        margin-left: 8%;
+    }
+    .contact-con-inner {
+        width: 100%;
+        margin-left: 10%;
+        margin-top: 10%;
+    }
+}
+
+@media(min-width:190px) and (max-width:290px){
+    .icon-in p a{
+        font-size: 12px;
+    }
+    .contact-con-inner{
+        margin-left: 5%;
+    }
+    .icon-hw-s {
+    width: 16px !important;
+    
+    }
+    .icon-in-s {
+        margin-left: 8%;
+    }
+}
+
+
+@media(min-width:761px) and (max-width:1290px){
+    .contact-headline{
+        visibility: collapse;
+    }
+    .contactInfo{
+        margin: 0px;
+        width: 45%;
+    }
+    .contactInfoTitle{
+        position: static;
+        bottom: 0rem;
+        height: 90%;
+        width: 100%;
+        margin-top: 8%;
+    }
+    .icon-in-s {
+        height: 100%;
+        width: 100%;
+        margin-left: 8%;
+        margin-top: 3%;
+    }
+    .query-form-w {
+        width: 50%;
+        margin-left: 0px;
+    }
+    .contact-con-inner {
+        width: 100%;
+        margin-left: 4%;
+        margin-top: 10%;
+    }
+}
+@media(min-width:1000px) and (max-width:1200px){
+    .contactInfo{
+    margin-bottom: 2%;
+    }
+    .contactInfoTitle{
+        width: 80%;
+        margin-left: 10%;
+    }
+    .icon-in-s {
+        margin-left: 5%;
+    }
+}
+
+@media(min-width:1279px) and (max-width:1285px){
+    .icon-in-s {
+        margin-left: 25%;
+    }
+    .contactInfo{
+        margin-bottom: 3%;
+        }
 }
 
 
